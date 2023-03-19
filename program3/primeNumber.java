@@ -8,17 +8,17 @@ public class primeNumber {
 		System.out.println("Enter a number to check if it is a prime number");
 		Scanner sc = new Scanner(System.in);
 		num = sc.nextInt();
-		for (int i = 2; i<num; i++) {
-			if (num%i == 0) {
+		sc.close();
+		for (int i = 2; i < num; i++) {
+			if (num % i == 0) {
 				count++;
 				break;
 			}
 		}
-		
+
 		if (count == 0) {
 			System.out.println(num + " is a prime number");
-		}
-		else {
+		} else {
 			System.out.println(num + " is not a prime number");
 		}
 
